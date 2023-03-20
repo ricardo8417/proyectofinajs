@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel Administrador|Inventarios</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+ 
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./styles/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper" id="inventario-contenedor">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    
+
+<h1>Sistema de Simulación de Inventarios.</h1>
+
+     
+          
+          
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        
+        <div class="info">
+          <a href="Admin.html" class="d-block">Administrador</a>
+        </div>
+      </div>
+
+    
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+        
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Usuarios
+                 </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Control de Inventarios
+                               
+              </p>
+            </a>
+            
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            
+          </div>
+        
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-sm-6">
+      <div class="card ">
+        <div class="card-header text-white bg-secondary text-center">
+          Alta de Productos
+        </div>
+        <div class="card-body">
+          <form id="formCaptura">
+
+            <div class="mb-3">
+              <label for="exampleInputCodigo" class="form-label">Código:</label>
+              <input type="text" class="form-control" id="inpCodigo" name="inputCodigo">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputNom" class="form-label">Nombre del Producto:</label>
+              <input type="text" class="form-control" id="inputNom"  name="inputNom">
+                          </div>
+            <div class="mb-3">
+              <label for="exampleInputAnaquel" class="form-label">Anaquel:</label>
+              <input type="text" class="form-control" id="inputAnaquel" name="inputAnaquel">
+            </div>
+
+           <div class="mb-3">
+              <label for="exampleInputCantidad" class="form-label">Cantidad:</label>
+              <input type="number" class="form-control" id="inputCantidad" name="inputCantidad">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPrecio" class="form-label">Precio:</label>
+              <input type="number" class="form-control" id="inputPrecio" name ="inputPrecio">
+            </div>
+            
+            <input type="submit" value="Guardar" class="btn btn-primary text-center">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card ">
+        <div class="card-header text-white bg-primary text-center">
+          Stock de Productos dados de Alta
+        </div>
+        <div class="card-body">
+         
+          
+
+          </div>
+        </div>
+    </div>
+
+    
+     
+     </div>
+
+     <div class="card ">
+      <div class="card-header text-white bg-success text-center">
+        Registros de Productos Dados de Alta
+      </div>
+      <div class="card-body" id="mostrar">
+   
+<div class="container">
+        
+        <div id="AppInventario" class="row pt-5">
+
+ 
+            <div id="invList" class="col-md-8">
+                <!-- <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <strong>Id</strong>: Id -
+                        <strong>Codigo</strong>: Codigo
+                        <strong>Producto</strong>: Producto
+                        <strong>Anaquel</strong>: Anaquel
+                        <strong>Cantidad</strong>: Cantidad
+                        <strong>Precio</strong>: Precio
+                        <button href="#" class="btn btn-danger" id="id" name="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+
+
+
+             </div>
+    </div>
+
+        
+       </div>
+
+</div>
+       </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer ">
+    
+    <strong>Copyright &copy; 2023 <a href="#">Ricardo Navarrete Cervantes</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+
+<script src="./styles/js/altaProducto.js" ></script>
+<!-- jQuery -->
+<script src="./styles/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./styles/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./styles/js/adminlte.min.js"></script>
+
+</body>
+</html>

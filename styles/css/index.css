@@ -1,0 +1,28 @@
+body{
+    background-color: lavenderblush;
+}
+
+.enlace{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 25%;
+    
+    
+}
+
+.enlace a{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border: 5px inset blue;
+    text-shadow: 1px 1px 2px red ;
+    margin: 5px 5px;
+     border-radius: 5px;
+     background-color: aquamarine;
+    text-decoration-color: transparent;
+}
+
+.enlace:hover{
+    transform: rotate(0.5turn);
+}
